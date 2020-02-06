@@ -1,0 +1,218 @@
+body, html {
+  height: 100%;
+}
+
+@font-face {
+  font-family: Mythical;
+  src: url(MythicalGarden-Bold.ttf);
+}
+
+@font-face {
+  font-family: Mythical2;
+  src: url(MythicalGarden-Light.ttf);
+}
+
+@font-face {
+  font-family: BeautyPpl;
+  src: url(BeautifulPeople.ttf);
+}
+
+@font-face {
+  font-family: Aliquam;
+  src: url(Aliquam.ttf);
+}
+
+@font-face {
+  font-family: Boboto;
+  src: url(Roboto-Medium.ttf);
+}
+
+.boboto {
+  font-family: Boboto;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.mythbig {
+  font-family: Mythical;
+  color: white;
+  font-size: 200%;
+  letter-spacing: 2px;
+}
+
+.mythlight {
+  font-family: Mythical2;
+  color: white;
+  font-size: 0%;
+  letter-spacing: 2px;
+}
+
+.beauty {
+  font-family: BeautifulPeople;
+  color: white;
+  letter-spacing: 0.25px;
+  font-size: 70%;
+}
+
+.beautybig {
+  font-family: BeautifulPeople;
+  color:  rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.25px;
+  font-size: 95%;
+  text-align: left;
+  font-weight: bold;
+}
+
+.aliq {
+  font-family: Aliquam;
+  letter-spacing: 1px;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.textopacity {
+  color: rgba(0, 0, 0, 1);
+}
+
+.backgroundopacity {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.barrow {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.bgpic {
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgblack {
+  background-color: black;
+  min-height: 500px;
+
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1.8s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-nav {
+  background: rgba(0, 0, 0, 0.3);
+  text-align:center;
+}
+
+.absolute-wrapper{
+  position: absolute;
+  width: 700px;
+  left: 2%;
+  top: 15%;
+  z-index: 5;
+  margin-left: 50px;
+}
+
+.boxed {
+  background-color: rgb(0, 0, 0, 0.75);
+  border-radius: 1%;
+  color: #fff;
+  min-height: 500px;
+}
+
+.containerWidth{
+  width: 90%;
+  border: 1px solid black;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ingredientAdjust, .MethodAdjust {
+  padding: 30px;
+}
+
+.pdf {
+  min-height: 100px;
+  background: blue;
+}
+
+.formcenter {
+  padding: 20px;
+  font-family: Aliquam;
+  margin: auto;
+}
+
+.overflow1 {
+  overflow: scroll;
+  height: 500px;
+  overflow-x: hidden;
+}
+
+.letterspace {
+  letter-spacing: 0.5px;
+}
+
+#noresult img {
+  display: block;
+  margin: auto;
+}
+
+#noresult h2 {
+  display: block;
+  color: white;
+}
+
+.table2 {
+  background-color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: darkgray;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #696969;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}

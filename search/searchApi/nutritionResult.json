@@ -1,0 +1,22 @@
+[
+    {
+    "id": 90629,
+    "title": "Baked Apples in White Wine",
+    "image": "https://spoonacular.com/recipeImages/90629-312x231.jpg",
+    "imageType": "jpg",
+    "calories": 210,
+    "protein": "1g",
+    "fat": "3g",
+    "carbs": "43g"
+    },
+    {
+    "id": 284420,
+    "title": "Chocolate Silk Pie with Marshmallow Meringue",
+    "image": "https://spoonacular.com/recipeImages/284420-312x231.jpg",
+    "imageType": "jpg",
+    "calories": 226,
+    "protein": "2g",
+    "fat": "10g",
+    "carbs": "33g"
+    }
+]

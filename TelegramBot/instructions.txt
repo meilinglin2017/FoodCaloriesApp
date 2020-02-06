@@ -1,0 +1,5 @@
+1) Ensure you have Node.js installed
+2) Run initialize.bat to install node dependencies
+3) Run startbot.bat to start bot
+4) Talk to @wad2bot on telegram for bot to record your ID into data.json
+5) Go to Nutrition Noobs' website and send pdf to the bot

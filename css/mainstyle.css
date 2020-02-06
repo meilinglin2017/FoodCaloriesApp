@@ -1,0 +1,623 @@
+body{
+    font-family:sans-serif;
+    margin:0;
+    padding:0;
+}
+.banner{
+    height:100vh;
+    position:relative;
+
+}
+.slider{
+    width:93%;
+    float:left;
+}
+.carousel-caption{
+    max-height: 350px !important;
+    max-width: 500px !important;
+    text-align: right !important;
+    right:60px !important;
+    left:auto !important;
+    top:160px !important;
+}
+
+.carousel-caption h1{
+    font-size: 70px;
+}
+.carousel-caption p{
+    margin-top: 40px;
+}
+.side-menu{
+    height:100%;
+    width:7%;
+    float:right;
+    background-color: black;
+    position:relative;
+    z-index:2;
+}
+.carousel-indicators{
+    left:85% !important;
+    height:40% !important;
+    width:95px !important;
+    top:55% !important;
+    display:block !important;
+    color: #fff;
+}
+.carousel-item img{
+    filter: brightness(50%);
+}
+.carousel-indicators li{
+    width:10px !important;
+    height:10px !important;
+    border-radius:50% !important;
+    margin-left:40px !important;
+    background: transparent !important;
+    border: 2px solid #fff !important;
+    margin-top: 10px;
+}
+
+
+.top-bar{
+    position:absolute;
+    margin: 10px 10px;
+    z-index:2;
+}
+.top-bar img{
+    height: 40px;
+    cursor: pointer;
+
+}
+
+.top-bar ul{
+    display:inline-flex;
+}
+.top-bar ul li{
+    list-style:none;
+    margin:15px 20px;
+}
+.top-bar ul li a{
+    color: #fff;
+    display: inline-block;
+    padding-top:5px;
+}
+
+.searchbutton{
+    position:absolute;
+    top: 80%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size: 20px;
+    padding: 20px 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index:3;
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.027);
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.479);
+}
+
+.submitbutton{
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 5px;
+    padding:10px;
+    width:100px;
+    height:48px;
+    justify-content: center;
+    position:absolute;
+    overflow:hidden;
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.027);
+    z-index: 3;
+    background-color: rgba(128, 128, 128, 0.288);
+    border: 0;
+
+}
+
+
+
+.submitbutton input[type="submit"]{
+    background: none;
+    color:white;
+    border:none;
+    position: relative;
+
+}
+
+.searchbutton,.submitbutton{
+    color: #fff;
+}
+
+.searchbutton:before,.submitbutton:before{
+    content:"";
+    position:absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.048);
+    z-index: 2;
+}
+
+.searchbutton:hover,.submitbutton:hover{
+    text-decoration:none;
+    color: white;
+}
+
+.searchbutton:hover,.submitbutton:hover{
+    box-shadow: 0 0 10px #fff;
+}
+
+.searchbutton span:nth-child(1),.submitbutton span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #0c002b, #fff);
+    animation: animate1 2s linear infinite;
+}
+@keyframes animate1{
+    0%
+    {
+        transform:translateX(-100%);
+    }
+    100%
+    {
+        transform:translateX(100%);
+    }
+}
+.searchbutton span:nth-child(2),.submitbutton span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #0c002b, #fff);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+
+}
+@keyframes animate2{
+    0%
+    {
+        transform:translateY(-100%);
+    }
+    100%
+    {
+        transform:translateY(100%);
+    }
+}
+
+.searchbutton span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #0c002b, #fff);
+    animation: animate3 2s linear infinite;   
+}
+@keyframes animate3{
+    0%
+    {
+        transform:translateX(100%);
+    }
+    100%
+    {
+        transform:translateX(-100%);
+    }
+}
+
+.searchbutton span:nth-child(4),.submitbutton span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, #0c002b, #fff);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+
+}
+@keyframes animate4{
+    0%
+    {
+        transform:translateY(100%);
+    }
+    100%
+    {
+        transform:translateY(-100%);
+    }
+}
+
+
+.container2{
+    width: 500px;
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    top:23%;
+    left: auto;
+    right: 10%;
+    z-index:2;
+    font-family: consolas;
+    text-align: center;
+}
+.container2 .card .face .content img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    
+}
+
+.container2 .card{
+    position:relative;
+    margin-right: 40px;
+    background: none;
+    border:none;
+    
+}
+
+.container2 .card .face{
+    width: 200px;
+    transition: 0.5s;
+}
+
+.container2 .card .face.face1{
+    position: relative;
+    background: #333;
+    display:inline-block;
+    align-items: center;
+    text-align: center ;
+    height: 240px;
+    z-index: 4;
+}
+
+.container2 .card .face.face1 h4{
+    margin:5px 0 0;
+    padding:0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: cursive;
+}
+
+.container2 .card .face.face1{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 1s ease;
+    transition: 0.5s;
+    transform: translateY(30px);
+
+}
+
+.container2 .card:hover .face.face1{
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+    transform: translateY(0px);
+    box-shadow: 0 0 20px #fff;
+}
+
+.container2 .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding:20px 13px 0;
+    box-sizing: border-box;
+    /* box-shadow: 0 20px 50px rgba(0,0,0,0.8); */
+    z-index: 3;
+    font-size: 13px;
+    transform: translateY(-200px);
+    height: 180px;
+}
+
+.container2 .card:hover .face.face2{
+    transform: translateY(0px);
+    box-shadow: 0 0 20px #fff;
+}
+.container2 .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container2 .card .face.face2 .content a{
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container2 .card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+
+}
+
+/* Search by nutrition */
+.nutrition{
+    position: absolute;
+    top:15%;
+    left: 5%;
+    right: auto;
+    justify-content: center;
+    width: 500px;
+    height:550px;
+    padding: 30px;
+    background: rgba(0,0,0,.75);
+    z-index: 3;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 1%;
+
+}
+
+.nutrition h2, .recipe h2{
+    color: #fff;
+    text-align: left;
+    font-size: 23px;
+    font-family: cursive;
+    padding-bottom: 15px;
+}
+
+label{
+    color: white;
+    text-align: center;
+}
+.teleform {
+    width: 50%;
+    margin: auto;
+}
+
+.telebot .inputBox {
+    text-align: start;
+}
+
+.telebot .inputBox .shortform {
+    display: inline;
+    width: 80%;
+}
+
+.overflow1 {
+    overflow: scroll;
+    height: 100px;
+    overflow-x: hidden;
+}
+
+/* For Ingredient Form */
+.ingredient {
+    position: absolute;
+    top: -35px;
+    left: 20%;
+    justify-content: center;
+    height: 520px;
+    width: 600px;
+    padding: 20px 0px;
+    background: rgba(0,0,0,.75);
+    z-index: 3;
+    box-sizing: border-box;
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    border-radius: 1%;
+    color: #fff;
+}
+
+.ingredient .ingredientbox{
+    padding-left:80px;
+    padding-right:80px;
+}
+
+.optionbtn {
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.optionbtn:hover {
+    background: #333;
+    color: #fff;
+}
+
+.ingredient h2{
+    font-size:23px;
+    padding-bottom:20px;
+    font-family: cursive;
+}
+
+.ingredient button {
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 5px 0px;
+}
+
+.ingredient button:hover {
+    background: #333;
+    color: #fff;
+}
+
+.ingredient a {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    color: white;
+    margin-left: 20px;
+}
+
+.optionend {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+#webcam {
+    position: relative;
+    height: 240;
+    width: 320;
+    margin: 10px auto;
+}
+
+#uppreview {
+    position: relative;
+    height: 240;
+    width: 320;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+#uppreview img {
+    width: 100%;
+}
+
+.recipe {
+    position: absolute;
+    top: 180px;
+    left: 5%;
+    right:auto;
+    justify-content: center;
+    height: 225px;
+    width: 500px;
+    padding: 20px 40px;
+    background: rgba(0,0,0,.75);
+    z-index: 3;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 1%;
+    color: #fff;
+    
+}
+
+.recipe .inputBox, .ingredient .inputBox {
+    position: relative;
+}
+
+.recipe .inputBox input, .ingredient .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.recipe .inputBox input:hover, .ingredient .inputBox input:hover {
+    box-shadow: 5px 15px 25px rgba(255, 255, 255, 0.4);
+    transition: all 0.75s;
+}
+
+.recipe .inputBox label, .ingredient .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s; 
+}
+
+.recipe .inputBox input:focus ~ label,
+.recipe .inputBox input:valid ~ label,
+.ingredient .inputBox input:focus ~ label,
+.ingredient .inputBox input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: black;
+    font-size: 13px;
+}
+
+
+.conatiner {
+	width: 100%;
+    height: 250px;
+    z-index:4;
+    position: relative;
+    padding-top:50px;
+
+}
+.wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+
+.box {
+	margin: 10px;
+	width: 180px;
+	height: 250px;
+	text-align: center;
+	border-radius: 3px;
+	-webkit-transition: 200ms ease-in-out;
+	-o-transition: 200ms ease-in-out;
+	transition: 200ms ease-in-out;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    float:left;
+}
+.box:hover {
+	margin-bottom: -10px;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.7);
+            box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    box-shadow: 0 0 20px #fff;
+}
+.box h1 {
+	color: #fff;
+	padding: 15px;
+	margin-top: 100px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 25px;
+	background: rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0 0 30px rgba(0,0,0,0.7);
+	        box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+.poster {
+	width: 130px;
+	height:130px;
+	margin: 120px auto;
+	position: relative;
+	border-radius: 100px;
+}
+
+.one {
+	background: url('https://source.unsplash.com/900x920');
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+    max-width: 100%;
+}
+
+
+
